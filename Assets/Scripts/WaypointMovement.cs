@@ -4,7 +4,7 @@ using System.Collections;
 public class WaypointMovement : MonoBehaviour {
 	
 	public GameObject player;
-
+    private AudioSource audio;
 
 	public float height = 2;
 	public bool teleport = true;
@@ -12,17 +12,12 @@ public class WaypointMovement : MonoBehaviour {
 	public float maxMoveDistance = 10;
 	private bool moving = false;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    private void Awake()
+    {
+        audio = this.GetComponent<AudioSource>();
+    }
 
-	public void Move(GameObject waypoint) {
+    public void Move(GameObject waypoint) {
 		if (!teleport) {
 			iTween.MoveTo (player, 
 				iTween.Hash (
@@ -37,6 +32,5 @@ public class WaypointMovement : MonoBehaviour {
                 waypoint.transform.position.z);
 		}
 	}
-
 }
 

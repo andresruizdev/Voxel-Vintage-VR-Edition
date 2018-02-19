@@ -15,12 +15,15 @@ public class ObjectsMovement : MonoBehaviour
     #region TurningCoroutine
     private IEnumerator TurningCoroutine()
     {
-        for (int i = 0; i < 360; i++)
+        if (gameObject.tag != "TutorialText")
         {
-            transform.Rotate(Vector3.up * speed, Space.World);
-            yield return new WaitForSeconds(0.0001f);
+            for (int i = 0; i < 360; i++)
+            {
+                transform.Rotate(Vector3.up * speed, Space.World);
+                yield return new WaitForSeconds(0.0001f);
+            }
+            StartCoroutine(TurningCoroutine()); 
         }
-        StartCoroutine(TurningCoroutine());
     }
     #endregion
 
