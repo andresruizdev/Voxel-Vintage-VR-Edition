@@ -1,6 +1,8 @@
 # Voxel Vintage: VR Edition
 Voxel Vintage is a game focused on Voxel Art like design line and has a futuristic style according to the game time. In the game, you are basically a Voxeltown citizen and you go to visit a place called Voxel Vintage Museum, where you found things that you consider very old, because you are in the year 2058, in each section you can see how look this objects before and interact with some of them.
 
+![alt text](https://cdn-images-1.medium.com/max/800/1*8c0vxcwO8XeJP-y10c_1eg.png)
+
 # What is Voxel Vintage?
 Voxel Vintage is a game focused on voxel futuristic art style according to the game time. In the game, you are basically a Voxeltown citizen and you go to visit a place called Voxel Vintage Museum, where you can find things that you consider very old, because you are in the year 2058, in each section you can see how this objects looked before and also interact with some of them.
 
